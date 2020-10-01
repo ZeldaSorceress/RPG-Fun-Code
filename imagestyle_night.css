@@ -1,0 +1,8 @@
+img {
+    padding: 5px;
+    border-style: groove;
+    border-radius: 25px;
+    border-color: aqua;
+    box-shadow: 2px 2px 5px blue;
+    opacity: 0.3;
+}

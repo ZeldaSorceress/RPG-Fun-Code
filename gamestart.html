@@ -3,43 +3,54 @@
     <title>RPG Game Hub</title>
 </head>
 <style>
-    html {
-        background-color: black;
-    }
-    body {
-        background-color: black;
-        background-image: url("https://alastaira.files.wordpress.com/2012/03/image18.png");
-        padding: 20px;
-    }
     html, body {
         cursor: crosshair;
-        background-image: url("https://alastaira.files.wordpress.com/2012/03/image18.png");
+        border-style: groove;
+        border-color: aqua;
+        box-shadow: 2px 2px 5px blue;
+    }
+    .container {
+        position: relative;
+        font-family: Arial;
+    }
+    .text-block {
+        position: absolute;
+        bottom: 400px;
+        right: 275px;
+        background-color: black;
+        color: white;
+        padding-left: 100px;
+        padding-right: 100px;
+        opacity: 0.7;
+        font-size: 16px;
+        text-decoration: none;
+        text-align: center;
     }
     a {
         text-decoration: none;
+        color: white;
+        background-color: black;
+        border-style: groove;
         border-color: aqua;
         border-radius: 10px;
-        border-style: groove;
-        padding: 10px;
-        color: white;
-        font-style: bold;
-        font-size: 16px;
+        padding: 5px;
+        text-shadow: 2px 2px 5px blue;
     }
     a:hover {
-        box-shadow: 2px 2px 5px black;
-        text-shadow: 2px 2px 5px black;
+        border-color: blue;
+        text-shadow: 2px 2px 5px aqua;
         color: white;
-        border-color: black;
-    }
-    .welcometext {
-        text-shadow: 2px 2px 5px black;
     }
 </style>
 <body>
-    <center>
-        <h1 class="welcometext">Click on a button to get started</h1>
-        <br>
+    <div class="container">
+        <img src="https://i.pinimg.com/originals/17/84/99/1784991f90930dc5aa70c14ef4df9586.png" alt="zeldaimage" width="100%">
+        <div class="text-block">
+        <h3 style="color: white">Game Menu</h3>
         <a href="RPG-Fun-Code\attacks_abilities.html">Abilities/Attacks</a>
+        <br>
+        <br>
+        <br>
         <a href="RPG-Fun-Code\damagechar.html">Damage Stats</a>
         <a href="RPG-Fun-Code\defensechar.html">Defense Stats</a>
         <br>
@@ -47,11 +58,15 @@
         <br>
         <a href="RPG-Fun-Code\forestmap_night.html">Forest(night)</a>
         <a href="RPG-Fun-Code\forestmap_day.html">Forest(day)</a>
+        <a href="RPG-Fun-Code\fortressmap.html">Fortress</a>
+        <br>
+        <br>
+        <br>
         <a href="RPG-Fun-Code\items.html">Items/Crafting</a>
-        <br>
-        <br>
-        <br>
         <a href="RPG-Fun-Code\weapons.html">Weapons</a>
-    </center>
-    <br>
+        <a href="RPG-Fun-Code\charhats.html">Hats</a>
+        <br>
+        <br>
+        </div>
+    </div>
 </body>

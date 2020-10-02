@@ -17,6 +17,23 @@
         background-image: linear-gradient(black, green);
         text-shadow: 2px 2px 5px black;
     }
+    .glow {
+        font-size: 40px;
+        color: #fff;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+    @-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px blue, 0 0 40px blue, 0 0 50px blue, 0 0 60px #e60073, 0 0 70px blue;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px green, 0 0 40px green, 0 0 50px green, 0 0 60px green, 0 0 70px green, 0 0 80px green;
+  }
+}
     div.background {
         background: url("https://i1.wp.com/butwhythopodcast.com/wp-content/uploads/2019/10/Link-to-the-Past-Map.jpg?resize=735%2C413&ssl=1") repeat;
         border: 2px solid black;
@@ -58,7 +75,7 @@
 <body>
     <div class="background">
         <div class="transbox">
-            <h3>Melee Weapons</h3>
+            <h3 class="glow">Melee Weapons</h3>
             <center>
             <table style="width:50%">
             <tr>
@@ -105,7 +122,7 @@
         </center>
         <br>
         <br>
-        <h3>Spellcaster Weapons</h3>
+        <h3 class="glow">Spellcaster Weapons</h3>
         <center>
         <table style="width:50%">
             <tr>
@@ -152,7 +169,7 @@
         </center>
         <br>
         <br>
-        <h3>Shields</h3>
+        <h3 class="glow">Shields</h3>
         <center>
         <table style="width:50%">
             <tr>
